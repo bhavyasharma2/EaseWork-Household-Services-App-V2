@@ -86,5 +86,5 @@ redis-server
 ### 6. Run the Celery worker and Celery Beat scheduler:
 ```bash
 celery -A app.celery worker --loglevel=debug
-celery -A app.celery beat --loglevel=info
+celery -A Code.app.celery beat --schedule Code/celerybeat-schedule --loglevel=info
 ```
